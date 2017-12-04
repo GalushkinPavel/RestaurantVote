@@ -1,36 +1,25 @@
 package ua.restaurant.vote.web.user;
 
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.springframework.http.MediaType;
 import org.springframework.transaction.annotation.Transactional;
 import ua.restaurant.vote.TestUtil;
-import ua.restaurant.vote.VoteTestData;
 import ua.restaurant.vote.model.User;
-import ua.restaurant.vote.model.Vote;
 import ua.restaurant.vote.to.UserTo;
 import ua.restaurant.vote.util.UserUtil;
 import ua.restaurant.vote.web.AbstractControllerTest;
 import ua.restaurant.vote.web.json.JsonUtil;
 
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static ua.restaurant.vote.TestUtil.userHttpBasic;
 import static ua.restaurant.vote.UserTestData.*;
-import static ua.restaurant.vote.UserTestData.USER3;
 import static ua.restaurant.vote.web.user.ProfileRestController.REST_URL;
 
 /**

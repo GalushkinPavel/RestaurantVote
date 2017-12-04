@@ -1,10 +1,8 @@
 package ua.restaurant.vote.service;
 
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import ua.restaurant.vote.model.Role;
 import ua.restaurant.vote.model.User;
-import ua.restaurant.vote.repository.JpaUtil;
 
 import javax.validation.ConstraintViolationException;
 
